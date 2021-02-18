@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:100px;
+  width:400px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  top: 20% !important;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 350px;
+
+}
+
+
+img{
+  max-width: 35%;
+  height: auto;
+  margin-bottom:5%;
+  margin-left: 150%
+
+}
+
+h2 {
+  font-family: Calibri, sans-serif;
+  max-width: 50ch;
+  margin-top: 100%;
+  margin-bottom: 1%;
+  margin-left: -28%;
+  color: white;
+  text-align: left;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+h3 {
+  font-family: Calibri, sans-serif;
+  max-width: 90ch;
+  margin-bottom: 3%;
+  color: white;
+  text-align: justify;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+p
+{
+  color: white;
+}
+
+.badge {
+    border: 1px solid  #b32400;
+    color: white;
+    font-weight: normal;
+}
+
+.solved {
+
+}
+
+.solvers {
+
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.solver_num {
+    color: white;
+}
+
+.category_web {
+    border-top: 4px solid #b32400;
+}
+
+.category_reversing {
+    border-top: 4px solid #b32400;
+}
+
+.category_steg {
+    border-top: 4px solid #b32400;
+}
+
+.category_pwning {
+    border-top: 4px solid #b32400;
+}
+
+.category_machine {
+    border-top: 4px solid #0f329894;
+}
+
+.category_machine a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category_misc {
+    border-top: 4px solid #ffce5694;
+}
+
+.category_crypt {
+    border-top: 4px solid #9966FF94;
+}
+
+
+.color_danger {
+    color: red;
+
+}
+
+.color_white {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: Calibri, sans-serif !important;
+  color: white;
+}
+
+h5
+{
+  color: white;
+  font-weight: 600;
+  font-family: Calibri, sans-serif !important;
+
+
+}
+h4
+{
+  font-family: Calibri, sans-serif !important;
+  color: white;
+  margin-bottom: 20px;
+
+}

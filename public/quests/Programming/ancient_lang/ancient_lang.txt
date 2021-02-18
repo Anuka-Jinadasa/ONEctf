@@ -1,0 +1,70 @@
+class arms
+{
+    public:
+        void lotr(char b[60])
+        {
+            for(int i = 0; i < strlen(b); i ++)
+            {
+                if(isupper(b[i]))
+                {
+                    b[i] = tolower(b[i]);
+                }
+                if(islower(b[i]))
+                {
+                    b[i] = tolower(b[i]);
+                    b[9] ='a';
+                }
+                if(isdigit(b[i]))
+                {
+                    b[i] = 'q';
+                }
+                if(b[i] == 'q')
+                {
+                    b[i] = b[i - 1];
+                    b[24 - 1] = '0';
+                    
+                    if(isupper(b[i]))
+                    {
+                        b[i] = b[i-1];
+                    }
+                }
+            }
+            
+            for(int i = 0; i < strlen(b); i ++)
+            {
+                if(isupper(b[i]))
+                {
+                    b[i] = tolower(b[i]);
+                }
+                
+                b[13] = 'e';
+                
+                if(b[i] == 't')
+                {
+                    b[i] = tolower(b[i]);
+                }
+                
+                if(b[i] == 's')
+                {
+                    b[i - 1] = b[i];
+                }
+                
+                if(b[i] == 'p')
+                {
+                    b[i] = b[24]; 
+                }
+                
+                 if(b[i] == 'T')
+                 {
+                    b[i] = '+'; 
+                 }
+                 b[8] = '1';
+                 b[30 - 3] = 'g';
+                
+            }
+            
+            b[11] = '7';
+            
+            std::cout << b ;
+        }
+};

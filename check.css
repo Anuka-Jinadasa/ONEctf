@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+body, html
+{
+
+  font-family: 'Calibri', sans-serif !important;
+  background-repeat: no-repeat;
+
+
+}
+.container-nav {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 9%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.center-nav {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn-nav {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  transition: 2s ease-in-out;
+  style="font-family: Calibri, sans-serif;
+}
+
+.svg1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #b32400;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 2s ease-in-out;
+}
+
+.btn-nav:hover {
+  transition: 2s ease-in-out;
+
+}
+
+.btn-nav:hover .svg1 {
+  stroke-dashoffset: -480;
+}
+
+.btn-nav span {
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: courier, courier new, serif;
+}

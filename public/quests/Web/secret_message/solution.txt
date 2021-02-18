@@ -1,0 +1,20 @@
+xxd -r secert.archive.bin > file.bin
+file file.bin 
+tar -xvf file.bin
+ls
+file secert.wordlist.bin 
+bzip2 -d secert.wordlist.bin
+bzip2 --help
+file secert.wordlist.bin.out 
+gzip -d secert.wordlist.bin.out
+file secert.wordlist.bin.out 
+mv secert.wordlist.bin.out secert.wordlist.bin.gz
+gzip -d secert.wordlist.bin.gz 
+file secert.wordlist.bin 
+mv secert.wordlist.bin secert.wordlist.tar.xz
+tar -xvf secert.wordlist.tar.xz 
+base64 -d secert.wordlist.txt.old > decoded.old
+sort decoded.old > sorted.old
+base64 -d secert.wordlist.txt.new > decoded.new
+sort decoded.new > sorted.new
+comm -3 sorted.new sorted.old

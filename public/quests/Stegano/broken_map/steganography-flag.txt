@@ -1,0 +1,3 @@
+hint: Steganography: Hiding an image inside another
+
+oneCTF{241aff4722d6a1f886ec7fbb3cc9e1e1}
